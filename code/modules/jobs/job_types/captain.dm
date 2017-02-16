@@ -2,7 +2,7 @@
 Captain
 */
 /datum/job/captain
-	title = "Captain"
+	title = "Governor"
 	flag = CAPTAIN
 	department_head = list("Centcom")
 	department_flag = ENGSEC
@@ -24,10 +24,10 @@ Captain
 
 /datum/job/captain/announce(mob/living/carbon/human/H)
 	..()
-	minor_announce("Captain [H.real_name] on deck!")
+	minor_announce("Governor [H.real_name] arrived in the colony!")
 
 /datum/outfit/job/captain
-	name = "Captain"
+	name = "Governor"
 	jobtype = /datum/job/captain
 
 	id = /obj/item/weapon/card/id/gold
@@ -54,13 +54,13 @@ Head of Personnel
 /datum/job/hop
 	title = "Head of Personnel"
 	flag = HOP
-	department_head = list("Captain")
+	department_head = list("Governor")
 	department_flag = CIVILIAN
 	head_announce = list("Supply", "Service")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Governor"
 	selection_color = "#ddddff"
 	req_admin_notify = 1
 	minimal_player_age = 10

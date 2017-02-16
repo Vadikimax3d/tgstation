@@ -4,13 +4,13 @@ Chief Engineer
 /datum/job/chief_engineer
 	title = "Chief Engineer"
 	flag = CHIEF
-	department_head = list("Captain")
+	department_head = list("Governor")
 	department_flag = ENGSEC
 	head_announce = list("Engineering")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Governor"
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
 	minimal_player_age = 7

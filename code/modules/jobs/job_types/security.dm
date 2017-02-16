@@ -8,15 +8,15 @@
 Head of Security
 */
 /datum/job/hos
-	title = "Head of Security"
+	title = "Colonel"
 	flag = HOS
-	department_head = list("Captain")
+	department_head = list("Governor")
 	department_flag = ENGSEC
 	head_announce = list("Security")
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Governor"
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	minimal_player_age = 14
@@ -33,7 +33,7 @@ Head of Security
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_maint_tunnels)
 
 /datum/outfit/job/hos
-	name = "Head of Security"
+	name = "Major"
 	jobtype = /datum/job/hos
 
 	id = /obj/item/weapon/card/id/silver
@@ -61,14 +61,14 @@ Head of Security
 Warden
 */
 /datum/job/warden
-	title = "Warden"
+	title = "Lieutenant"
 	flag = WARDEN
-	department_head = list("Head of Security")
+	department_head = list("Colonel")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Colonel"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 
@@ -83,7 +83,7 @@ Warden
 	return L
 
 /datum/outfit/job/warden
-	name = "Warden"
+	name = "Lieutenant"
 	jobtype = /datum/job/warden
 
 	belt = /obj/item/device/pda/warden
@@ -113,12 +113,12 @@ Detective
 /datum/job/detective
 	title = "Detective"
 	flag = DETECTIVE
-	department_head = list("Head of Security")
+	department_head = list("Colonel")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the Colonel"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 
@@ -159,14 +159,14 @@ Detective
 Security Officer
 */
 /datum/job/officer
-	title = "Security Officer"
+	title = "Private"
 	flag = OFFICER
-	department_head = list("Head of Security")
+	department_head = list("Colonel")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+	supervisors = "the Colonel, and the head of your assigned department (if applicable)"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 
@@ -181,44 +181,40 @@ Security Officer
 	L |= ..() | check_config_for_sec_maint()
 	return L
 
-var/list/available_depts = list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY)
+var/list/sec_departments = list("engineering", "supply", "medical", "science")
 
 /datum/job/officer/after_spawn(mob/living/carbon/human/H)
-	// Assign department security
-	var/department
-	if(H && H.client && H.client.prefs)
-		department = H.client.prefs.prefered_security_department
-		if(!LAZYLEN(available_depts) || department == "None")
-			return
-		else if(department in available_depts)
-			LAZYREMOVE(available_depts, department)
-		else
-			department = pick_n_take(available_depts)
+	// Assign departament security
+	if(!sec_departments.len)
+		return
+	var/department = pick(sec_departments)
+	sec_departments -= department
 	var/ears = null
 	var/tie = null
 	var/list/dep_access = null
 	var/destination = null
 	var/spawn_point = null
+
 	switch(department)
-		if(SEC_DEPT_SUPPLY)
+		if("supply")
 			ears = /obj/item/device/radio/headset/headset_sec/alt/department/supply
 			dep_access = list(access_mailsorting, access_mining, access_mining_station)
 			destination = /area/security/checkpoint/supply
 			spawn_point = locate(/obj/effect/landmark/start/depsec/supply) in department_security_spawns
 			tie = /obj/item/clothing/tie/armband/cargo
-		if(SEC_DEPT_ENGINEERING)
+		if("engineering")
 			ears = /obj/item/device/radio/headset/headset_sec/alt/department/engi
 			dep_access = list(access_construction, access_engine)
 			destination = /area/security/checkpoint/engineering
 			spawn_point = locate(/obj/effect/landmark/start/depsec/engineering) in department_security_spawns
 			tie = /obj/item/clothing/tie/armband/engine
-		if(SEC_DEPT_MEDICAL)
+		if("medical")
 			ears = /obj/item/device/radio/headset/headset_sec/alt/department/med
 			dep_access = list(access_medical)
 			destination = /area/security/checkpoint/medical
 			spawn_point = locate(/obj/effect/landmark/start/depsec/medical) in department_security_spawns
 			tie =  /obj/item/clothing/tie/armband/medblue
-		if(SEC_DEPT_SCIENCE)
+		if("science")
 			ears = /obj/item/device/radio/headset/headset_sec/alt/department/sci
 			dep_access = list(access_research)
 			destination = /area/security/checkpoint/science
@@ -285,8 +281,8 @@ var/list/available_depts = list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT
 	implants = list(/obj/item/weapon/implant/mindshield)
 
 
-/obj/item/device/radio/headset/headset_sec/alt/department/Initialize()
-	wires = new/datum/wires/radio(src)
+/obj/item/device/radio/headset/headset_sec/alt/department/New()
+	wires = new(src)
 	secure_radio_connections = new
 	recalculateChannels()
 	..()
