@@ -11633,6 +11633,7 @@
 	width = 7
 	},
 /obj/docking_port/stationary{
+	area_type = /area/surface_planet;
 	dir = 8;
 	dwidth = 3;
 	height = 5;
@@ -35952,10 +35953,12 @@
 	width = 15
 	},
 /obj/docking_port/stationary{
+	area_type = /area/surface_planet;
 	dwidth = 5;
 	height = 7;
 	id = "arrival_home";
 	name = "port bay 1";
+	turf_type = /turf/open/floor/plating;
 	width = 15
 	},
 /turf/open/floor/plating,
@@ -44909,7 +44912,8 @@
 /obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Cargo Bay Airlock"
 	},
-/turf/open/floor/plasteel/delivery,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bGg" = (
 /obj/machinery/newscaster{
@@ -45420,22 +45424,29 @@
 /obj/item/weapon/weldingtool,
 /obj/item/weapon/wirecutters,
 /obj/item/stack/cable_coil,
-/turf/open/floor/plasteel/floorgrime,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bHi" = (
 /obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/plasteel/delivery,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bHj" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plasteel/delivery,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bHk" = (
-/turf/open/floor/plasteel/delivery,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bHl" = (
 /obj/machinery/recharge_station,
-/turf/open/floor/plasteel/delivery,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bHm" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
@@ -45955,7 +45966,10 @@
 	pixel_x = 3;
 	pixel_y = -5
 	},
-/turf/open/floor/plasteel/floorgrime,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bIj" = (
 /obj/item/weapon/cigbutt,
@@ -46851,7 +46865,10 @@
 /obj/item/clothing/suit/fire/firefighter,
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/head/hardhat/red,
-/turf/open/floor/plasteel/floorgrime,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJM" = (
 /obj/machinery/space_heater,
@@ -46860,7 +46877,8 @@
 	pixel_x = 0;
 	pixel_y = -27
 	},
-/turf/open/floor/plasteel/bot,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJN" = (
 /obj/structure/closet/crate{
@@ -46879,7 +46897,8 @@
 /obj/item/weapon/crowbar,
 /obj/item/weapon/wrench,
 /obj/item/device/radio,
-/turf/open/floor/plasteel/bot,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJO" = (
 /obj/structure/closet/crate/medical{
@@ -46899,12 +46918,13 @@
 	pixel_y = 3
 	},
 /obj/item/weapon/lazarus_injector,
+/obj/effect/turf_decal/bot,
 /mob/living/simple_animal/bot/medbot{
 	name = "\improper emergency medibot";
 	pixel_x = -3;
 	pixel_y = 2
 	},
-/turf/open/floor/plasteel/bot,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJP" = (
 /obj/item/device/radio/intercom{
@@ -46914,7 +46934,8 @@
 	pixel_y = -31
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plasteel/bot,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJQ" = (
 /obj/structure/table,
@@ -46922,7 +46943,8 @@
 /obj/item/weapon/folder/yellow,
 /obj/item/weapon/pen,
 /obj/item/hand_labeler_refill,
-/turf/open/floor/plasteel/bot,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel,
 /area/shuttle/escape)
 "bJR" = (
 /obj/structure/chair/office/dark{
@@ -64941,6 +64963,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/atmos)
+"cuc" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/escape)
 
 (1,1,1) = {"
 aaa
@@ -80684,9 +80712,9 @@ asw
 asU
 atv
 atv
-ctW
+ctV
 atv
-ctY
+ctV
 atv
 atv
 asU
@@ -81712,9 +81740,9 @@ asw
 asU
 atv
 atv
-ctX
+ctV
 avl
-ctZ
+ctV
 atv
 atv
 asU
@@ -87694,7 +87722,7 @@ bAY
 bxl
 bHh
 bIi
-bGZ
+cuc
 bJL
 bxl
 bKV
