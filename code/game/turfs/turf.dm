@@ -3,7 +3,7 @@
 	level = 1
 
 	var/intact = 1
-	var/turf/baseturf = /turf/open/space
+	var/turf/baseturf = /turf/open/floor/plating
 
 	var/temperature = T20C
 	var/to_be_destroyed = 0 //Used for fire, if a melting temperature was reached, it will be destroyed
@@ -21,7 +21,7 @@
 
 	var/explosion_level = 0	//for preventing explosion dodging
 	var/explosion_id = 0
-	
+
 	var/list/decals
 
 /turf/New()

@@ -908,6 +908,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	has_gravity = 1
 	outdoors = 1
 
+/area/surface_indoor_planet
+	name = "Colony"
+	icon_state = "green"
+	has_gravity = 1
+	outdoors = 1
 
 
 /////////////////////////////////////////////////////////////////////
