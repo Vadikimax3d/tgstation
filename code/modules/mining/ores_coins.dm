@@ -171,6 +171,13 @@
 	materials = list(MAT_TITANIUM=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/titanium
 
+/obj/item/weapon/ore/coal
+	name = "coal ore"
+	icon_state = "Coal ore"
+	origin_tech = "materials=2"
+	points = 12
+	materials = list(MAT_COAL=MINERAL_MATERIAL_AMOUNT)
+
 /obj/item/weapon/ore/slag
 	name = "slag"
 	desc = "Completely useless"

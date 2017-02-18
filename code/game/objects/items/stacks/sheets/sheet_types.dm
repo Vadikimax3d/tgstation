@@ -166,6 +166,24 @@ var/global/list/datum/stack_recipe/wood_recipes = list ( \
 /obj/item/stack/sheet/mineral/wood/fifty
 	amount = 50
 
+/obj/item/stack/sheet/mineral/coal
+	name = "coal ore"
+	desc = "Default coal..."
+	singular_name = "coal"
+	icon_state = "Coal ore"
+	icon = 'icons/obj/mining.dmi'
+	origin_tech = "materials=2"
+	sheettype = "coal"
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 50, acid = 0)
+	resistance_flags = FLAMMABLE
+	merge_type = /obj/item/stack/sheet/mineral/coal
+
+/obj/item/stack/sheet/mineral/coal/New(var/loc, var/amount=null)
+	return ..()
+
+/obj/item/stack/sheet/mineral/coal/fifty
+	amount = 50
+
 /*
  * Cloth
  */

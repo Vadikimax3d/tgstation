@@ -1734,6 +1734,7 @@
 #include "code\modules\power\lighting.dm"
 #include "code\modules\power\monitor.dm"
 #include "code\modules\power\port_gen.dm"
+#include "code\modules\power\port_gen2.dm"
 #include "code\modules\power\power.dm"
 #include "code\modules\power\powernet.dm"
 #include "code\modules\power\rtg.dm"

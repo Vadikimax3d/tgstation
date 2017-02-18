@@ -102,6 +102,13 @@ var/global/list/datum/stack_recipe/diamond_recipes = list ( \
 	pixel_y = rand(0,4)-4
 	..()
 
+	/*var/global/list/datum/stack_recipe/uranium_recipes = list ( \
+	new/datum/stack_recipe("uranium door", /obj/structure/mineral_door/uranium, 10, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("uranium tile", /obj/item/stack/tile/mineral/uranium, 1, 4, 20), \
+	new/datum/stack_recipe("Nuke Statue", /obj/structure/statue/uranium/nuke, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Engineer Statue", /obj/structure/statue/uranium/eng, 5, one_per_turf = 1, on_floor = 1), \
+	*///)
+
 /*
  * Uranium
  */
