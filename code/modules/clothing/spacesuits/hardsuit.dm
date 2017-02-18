@@ -465,7 +465,7 @@
 
 	//Security hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security
-	name = "security hardsuit helmet"
+	name = "colony security hardsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "hardsuit0-sec"
 	item_state = "sec_helm"
@@ -475,7 +475,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"
-	name = "security hardsuit"
+	name = "colony security hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
 	item_state = "sec_hardsuit"
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals, /obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/ballistic,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs)
@@ -483,7 +483,7 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security
 
 /obj/item/clothing/head/helmet/space/hardsuit/security/hos
-	name = "head of security's hardsuit helmet"
+	name = "colonel's hardsuit helmet"
 	desc = "a special bulky helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "hardsuit0-hos"
 	item_color = "hos"
@@ -492,7 +492,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
 	icon_state = "hardsuit-hos"
-	name = "head of security's hardsuit"
+	name = "colonel's hardsuit"
 	desc = "A special bulky suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
 	armor = list(melee = 45, bullet = 25, laser = 30, energy = 10, bomb = 25, bio = 100, rad = 50, fire = 95, acid = 95)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos

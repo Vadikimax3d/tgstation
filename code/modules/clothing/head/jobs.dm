@@ -110,20 +110,20 @@
 //Security
 
 /obj/item/clothing/head/HoS
-	name = "head of security cap"
-	desc = "The robust standard-issue cap of the Head of Security. For showing the officers who's in charge."
+	name = "colonel cap"
+	desc = "The robust standard-issue cap of the Colonel. For showing the officers who's in charge."
 	icon_state = "hoscap"
 	armor = list(melee = 40, bullet = 30, laser = 25, energy = 10, bomb = 25, bio = 10, rad = 0, fire = 50, acid = 60)
 	strip_delay = 80
 
 /obj/item/clothing/head/HoS/beret
-	name = "head of security beret"
-	desc = "A robust beret for the Head of Security, for looking stylish while not sacrificing protection."
+	name = "colonel's beret"
+	desc = "A robust beret for the Colonel, for looking stylish while not sacrificing protection."
 	icon_state = "hosberetblack"
 
 /obj/item/clothing/head/warden
-	name = "warden's police hat"
-	desc = "It's a special armored hat issued to the Warden of a security force. Protects the head from impacts."
+	name = "lieutenant's police hat"
+	desc = "It's a special armored hat issued to the Lieutenant of a security force. Protects the head from impacts."
 	icon_state = "policehelm"
 	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 30, acid = 60)
 	strip_delay = 60
@@ -138,13 +138,13 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/beret/sec/navyhos
-	name = "head of security's beret"
-	desc = "A special beret with the Head of Security's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
+	name = "colonel's beret"
+	desc = "A special beret with the Colonel's insignia emblazoned on it. A symbol of excellence, a badge of courage, a mark of distinction."
 	icon_state = "hosberet"
 
 /obj/item/clothing/head/beret/sec/navywarden
-	name = "warden's beret"
-	desc = "A special beret with the Warden's insignia emblazoned on it. For wardens with class."
+	name = "lieutenant's beret"
+	desc = "A special beret with the Lieutenant's insignia emblazoned on it. For wardens with class."
 	icon_state = "wardenberet"
 	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0, fire = 30, acid = 50)
 	strip_delay = 60

@@ -23,7 +23,7 @@
 	return(OXYLOSS)
 
 /obj/item/clothing/neck/cloak/hos
-	name = "head of security's cloak"
+	name = "colonel's cloak"
 	desc = "Worn by Securistan, ruling the station with an iron fist. It's slightly armored."
 	icon_state = "hoscloak"
 
@@ -50,7 +50,7 @@
 	name = "captain's cloak"
 	desc = "Worn by the commander of Space Station 13."
 	icon_state = "capcloak"
-	
+
 /obj/item/clothing/neck/cloak/hop
 	name = "head of personnel's cloak"
 	desc = "Worn by the Head of Personnel. It smells faintly of bureaucracy."

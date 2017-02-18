@@ -55,7 +55,7 @@
 	new /obj/item/weapon/door_remote/civillian(src)
 
 /obj/structure/closet/secure_closet/hos
-	name = "\proper head of security's locker"
+	name = "\proper colonel's locker"
 	req_access = list(access_hos)
 	icon_state = "hos"
 

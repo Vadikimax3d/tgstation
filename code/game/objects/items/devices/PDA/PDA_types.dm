@@ -94,7 +94,7 @@
 	icon_state = "pda-hop"
 
 /obj/item/device/pda/heads/hos
-	name = "head of security PDA"
+	name = "colonel PDA"
 	default_cartridge = /obj/item/weapon/cartridge/hos
 	icon_state = "pda-hos"
 

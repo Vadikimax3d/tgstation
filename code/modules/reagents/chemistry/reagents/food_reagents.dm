@@ -320,11 +320,11 @@
 /datum/reagent/consumable/sprinkles
 	name = "Sprinkles"
 	id = "sprinkles"
-	description = "Multi-colored little bits of sugar, commonly found on donuts. Loved by cops."
+	description = "Multi-colored little bits of sugar, commonly found on donuts. Loved by cops and army."
 	color = "#FF00FF" // rgb: 255, 0, 255
 
 /datum/reagent/consumable/sprinkles/on_mob_life(mob/living/M)
-	if(ishuman(M) && M.job in list("Security Officer", "Head of Security", "Detective", "Warden"))
+	if(ishuman(M) && M.job in list("Private", "Colonel", "Detective", "Lieutenant"))
 		M.heal_bodypart_damage(1,1, 0)
 		. = 1
 	..()

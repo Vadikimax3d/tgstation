@@ -417,24 +417,24 @@
 	can_adjust = 0
 
 /obj/item/clothing/under/captainparade
-	name = "captain's parade uniform"
-	desc = "A captain's luxury-wear, for special occasions."
+	name = "governor's parade uniform"
+	desc = "A governor's luxury-wear, for special occasions."
 	icon_state = "captain_parade"
 	item_state = "by_suit"
 	item_color = "captain_parade"
 	can_adjust = 0
 
 /obj/item/clothing/under/hosparademale
-	name = "head of security's parade uniform"
-	desc = "A male head of security's luxury-wear, for special occasions."
+	name = "colonel's parade uniform"
+	desc = "A male colonel's luxury-wear, for special occasions."
 	icon_state = "hos_parade_male"
 	item_state = "r_suit"
 	item_color = "hos_parade_male"
 	can_adjust = 0
 
 /obj/item/clothing/under/hosparadefem
-	name = "head of security's parade uniform"
-	desc = "A female head of security's luxury-wear, for special occasions."
+	name = "colonel's parade uniform"
+	desc = "A female colonel's luxury-wear, for special occasions."
 	icon_state = "hos_parade_fem"
 	item_state = "r_suit"
 	item_color = "hos_parade_fem"

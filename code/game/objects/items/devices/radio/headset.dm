@@ -135,13 +135,13 @@
 	keyslot = new /obj/item/device/encryptionkey/heads/rd
 
 /obj/item/device/radio/headset/heads/hos
-	name = "\proper the head of security's headset"
+	name = "\proper the colonel's headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station. \nTo access the security channel, use :s. For command, use :c."
 	icon_state = "com_headset"
 	keyslot = new /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/hos/alt
-	name = "\proper the head of security's bowman headset"
+	name = "\proper the colonel's bowman headset"
 	desc = "The headset of the man in charge of keeping order and protecting the station. Protects ears from flashbangs. \nTo access the security channel, use :s. For command, use :c."
 	flags = EARBANGPROTECT
 	icon_state = "com_headset_alt"

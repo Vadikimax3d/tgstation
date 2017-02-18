@@ -103,8 +103,8 @@
 	req_access = list(access_ce)
 
 /obj/structure/noticeboard/hos
-	name = "Head of Security's Notice Board"
-	desc = "Important notices from the Head of Security."
+	name = "Colonel's Notice Board"
+	desc = "Important notices from the Colonel."
 	req_access = list(access_hos)
 
 /obj/structure/noticeboard/cmo

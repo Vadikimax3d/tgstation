@@ -25,7 +25,7 @@
 	icon_state = "security"
 	item_state = "gy_suit"
 	item_color = "security"
-	
+
 
 /obj/item/clothing/under/rank/warden
 	name = "security suit"
@@ -71,8 +71,8 @@
  * Head of Security
  */
 /obj/item/clothing/under/rank/head_of_security
-	name = "head of security's jumpsuit"
-	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Head of Security."
+	name = "colonel's jumpsuit"
+	desc = "A security jumpsuit decorated for those few with the dedication to achieve the position of Colonel."
 	icon_state = "rhos"
 	item_state = "r_suit"
 	item_color = "rhos"
@@ -88,8 +88,8 @@
 	item_color = "hos"
 
 /obj/item/clothing/under/rank/head_of_security/alt
-	name = "head of security's turtleneck"
-	desc = "A stylish alternative to the normal head of security jumpsuit, complete with tactical pants."
+	name = "colonel's turtleneck"
+	desc = "A stylish alternative to the normal colonel jumpsuit, complete with tactical pants."
 	icon_state = "hosalt"
 	item_state = "bl_suit"
 	item_color = "hosalt"
@@ -107,8 +107,8 @@
 	alt_covers_chest = 1
 
 /obj/item/clothing/under/rank/head_of_security/navyblue
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Head of Security."
-	name = "head of security's formal uniform"
+	desc = "The insignia on this uniform tells you that this uniform belongs to the Colonel of Colony Army."
+	name = "colonel's formal uniform"
 	icon_state = "hosblueclothes"
 	item_state = "hosblueclothes"
 	item_color = "hosblueclothes"

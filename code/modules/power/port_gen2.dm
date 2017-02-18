@@ -1,7 +1,7 @@
 
 
-/* new portable generator - work in progress
 
+/* new portable generator - work in progress
 /obj/machinery/power/port_gen
 	name = "portable generator"
 	desc = "A portable generator used for emergency backup power."
@@ -20,20 +20,14 @@
 	var/capacity = 1e6
 	var/turf/outturf
 	var/lastgen
-
-
 /obj/machinery/power/port_gen/process()
 ideally we're looking to generate 5000
-
 /obj/machinery/power/port_gen/attackby(obj/item/weapon/W, mob/user)
 tank [un]loading stuff
-
 /obj/machinery/power/port_gen/attack_hand(mob/user)
 turn on/off
-
 /obj/machinery/power/port_gen/examine(mob/user)
 display round(lastgen) and plasmatank amount
-
 */
 
 //Previous code been here forever, adding new framework for portable generators

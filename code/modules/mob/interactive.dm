@@ -320,7 +320,7 @@
 			functions += "healpeople"
 		if("Research Director","Scientist","Roboticist")
 			favoured_types = list(/obj/item/weapon/reagent_containers/glass/beaker, /obj/item/stack, /obj/item/weapon/reagent_containers)
-		if("Head of Security","Warden","Security Officer","Detective")
+		if("Colonel","Lieutenant","Private","Detective")
 			favoured_types = list(/obj/item/clothing, /obj/item/weapon, /obj/item/weapon/restraints)
 		if("Janitor")
 			favoured_types = list(/obj/item/weapon/mop, /obj/item/weapon/reagent_containers/glass/bucket, /obj/item/weapon/reagent_containers/spray/cleaner, /obj/effect/decal/cleanable)

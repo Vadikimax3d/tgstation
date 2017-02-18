@@ -1726,3 +1726,25 @@
 					/obj/item/weapon/circuitboard/machine/computer/sat_control
 					)
 	crate_name= "shield control board crate"
+
+//////MONEY_YAY
+
+/datum/supply_pack/misc/space_money
+	name = "Money supply"
+	cost = 4500
+	access = access_hop
+	contains = list(
+					/obj/item/stack/spacecash/c1000,
+					/obj/item/stack/spacecash/c1000,
+					/obj/item/stack/spacecash/c500,
+					/obj/item/stack/spacecash/c500,
+					/obj/item/stack/spacecash/c500,
+					/obj/item/stack/spacecash/c200,
+					/obj/item/stack/spacecash/c200,
+					/obj/item/stack/spacecash/c200,
+					/obj/item/stack/spacecash/c100,
+					/obj/item/stack/spacecash/c100,
+					/obj/item/stack/spacecash/c100,
+					/obj/item/stack/spacecash/c100
+					)
+	crate_name= "space money"

@@ -119,7 +119,7 @@ LINEN BINS
 	item_color = "cmo"
 
 /obj/item/weapon/bedsheet/hos
-	name = "head of security's bedsheet"
+	name = "colonel's bedsheet"
 	desc = "It is decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!"
 	icon_state = "sheethos"
 	item_color = "hosred"

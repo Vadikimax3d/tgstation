@@ -23,7 +23,7 @@
 		"Cyborg",
 		"Captain",
 		"Head of Personnel",
-		"Head of Security",
+		"Colonel",
 		"Chief Engineer",
 		"Research Director",
 		"Chief Medical Officer")
@@ -463,7 +463,7 @@
 						get_subordinates("Head of Personnel")
 					if((access_hos in auth_card.access) && ((target_dept==2) || !target_dept))
 						region_access |= 2
-						get_subordinates("Head of Security")
+						get_subordinates("Colonel")
 					if((access_cmo in auth_card.access) && ((target_dept==3) || !target_dept))
 						region_access |= 3
 						get_subordinates("Chief Medical Officer")
